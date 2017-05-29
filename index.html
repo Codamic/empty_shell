@@ -3,10 +3,11 @@ layout: default
 title: Blog
 ---
 
-<ul class=menu>
-  <li><a class="menu__item menu__item_selected" href="/">Blog</a>
-  <li><a class="menu__item" href="/talks/">Talks</a>
-  <li><a class="menu__item" href="/about/">About</a>
+<ul class="menu">
+  {% for link in site.menu %}
+  <li><a class="menu__item" href="{{ link.url }}">{{ link.title }}</a></li>
+  <!--  menu__item_inside for active menu -->
+  {% endfor %}
 </ul>
 
 <div class="post">
@@ -17,7 +18,7 @@ title: Blog
       <p><a href="{{ post.url }}">{{ post.title }}</a> <span class=date>{{ post.date | date: "%-m/%-d"}}</span>
     {% endif %}
   {% endfor %}
-  
+
   <h1>2016</h1>
   {% for post in site.posts %}
     {% assign year = post.date | date: "%-Y" %}
@@ -25,7 +26,7 @@ title: Blog
       <p><a href="{{ post.url }}">{{ post.title }}</a> <span class=date>{{ post.date | date: "%-m/%-d"}}</span>
     {% endif %}
   {% endfor %}
-  
+
   <h1>2015</h1>
   {% for post in site.posts %}
     {% assign year = post.date | date: "%-Y" %}

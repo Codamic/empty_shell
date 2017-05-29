@@ -1,2 +1,9 @@
 permalink: /:categories/:title/
 markdown: kramdown
+menu:
+  -
+    title: "sam"
+    url: "/asdasd"
+  -
+    title: "somethin"
+    url: "/dasdasd"
