@@ -8,6 +8,8 @@ permalink: /:categories/:title/
 markdown: kramdown
 
 theme_color: hsl(215, 50%, 55%)
+theme: jekyll-theme-minimal
+
 menu:
   -
     title: "sam"
