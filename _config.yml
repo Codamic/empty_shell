@@ -1,7 +1,11 @@
 title: Project Title
 description: Description
 homepage: http://somedomain.com
+show_logo: true
 show_downloads: true
+show_title: true
+show_description: true
+
 google_analytics: [Your Google Analytics tracking ID]
 
 permalink: /:categories/:title/
