@@ -1,7 +1,7 @@
 title: Project Title
 description: Description
 homepage: http://somedomain.com
-show_logo: true
+show_logo: false
 show_downloads: true
 show_title: true
 show_description: true
