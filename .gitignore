@@ -1,9 +1,8 @@
-*.pxm
 .DS_Store
-_site
-*.sketch
-.vscode
-blog/readable-clojure/originals/*
-blog/readable-clojure/snippets/*
-*~
-Gemfile.lock
+Thumbs.db
+db.json
+*.log
+node_modules/
+public/
+.deploy*/
+src/_drafts
